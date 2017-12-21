@@ -1,6 +1,6 @@
 {
   "name": "utils.tothousands",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "数字加千分位",
   "main": "index.js",
   "scripts": {

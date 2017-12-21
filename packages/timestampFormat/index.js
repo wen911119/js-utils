@@ -1,9 +1,10 @@
 // 时间戳格式化
 
-export default function timestampFormat(ts, template) {
+function timestampFormat(ts, template) {
     if (!ts) {
         return ts
     }
+    ts = parseInt(ts)
     let t = new Date(ts)
     let year = t.getFullYear()
     let month = _trim(t.getMonth() + 1)
@@ -28,3 +29,5 @@ function _trim(n) {
     }
     return n
 }
+
+module.exports = timestampFormat
